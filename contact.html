@@ -4,14 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AfriConnect Summit</title>
-    <!-- feuille de style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- contenu de la page -->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- <i class="bi bi-globe-central-south-asia"></i> -->
+                <a href="index.html">AfriConnect Summit 2026</a>
+            </div>
+            <!-- boutton dark/light mode -->
+            <!-- <button id="menu-btn"><i class="fa-light fa-bars"></i></button> -->
+            <ul id="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <li><button id="menu-btn"><i class="fa-sharp-duotone fa-light fa-circle-moon"></i></button></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-hero">
+      <div class="container">
+        <p><a href="index.html">Accueil</a> / Contact</p>
+        <h2>Contact</h2>
+        <p>N'hésitez pas à nous contacter pour toute question ou information supplémentaire.</p>
+      </div>
+    </section>
+            <!-- FORMULAIRE + INFOS  -->
+    <section class="contact-section">
+      <div class="container contact-flex">
 
+        <!-- Colonne formulaire -->
+        <div class="contact-form">
+          <div class="form-card">
+            <h2 class="form-title">Formulaire d'inscription</h2>
 
-<!-- script JavaScript -->
+            <div class="form-success">
+              <i class="bi bi-check-circle-fill"></i>
+              Merci ! Votre inscription a bien été enregistrée. Un email de confirmation vous sera envoyé.
+            </div>
+
+            <form id="registration-form">
+              <div class="form-row">
+                <label for="fullname">Nom complet*</label>
+                <input type="text" id="fullname" placeholder="votre nom complet">
+                <p class="error-msg" role="alert"></p>
+              </div>
+
+              <div class="form-row">
+                <label for="email">Adresse email*</label>
+                <input type="email" id="email" placeholder="votre email">
+                <p class="error-msg" role="alert"></p>
+              </div>
+
+              <div class="form-row">
+                <label for="phone">Téléphone*</label>
+                <input type="tel" id="phone" placeholder="votre numéro de téléphone">
+                <p class="error-msg" role="alert"></p>
+              </div>
+
+              <div class="form-row">
+                <label for="participation">Type de participation*</label>
+                <select id="participation">
+                  <option value="">Sélectionnez une option</option>
+                  <option value="visiteur">Visiteur</option>
+                  <option value="exposant">Exposant</option>
+                  <option value="intervenant">Intervenant</option>
+                  <option value="investisseur">Investisseur</option>
+                  <option value="presse">Presse / Média</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label for="country">Pays africain*</label>
+                <select id="country">
+                  <option value="">Sélectionnez votre pays</option>
+                  <option value="senegal">Sénégal</option>
+                  <option value="cote-ivoire">Côte d'Ivoire</option>
+                  <option value="nigeria">Nigeria</option>
+                  <option value="ghana">Ghana</option>
+                  <option value="kenya">Kenya</option>
+                  <option value="mali">Mali</option>
+                  <option value="cameroun">Cameroun</option>
+                  <option value="afrique-du-sud">Afrique du Sud</option>
+                  <option value="maroc">Maroc</option>
+                  <option value="tunisie">Tunisie</option>
+                  <option value="rwanda">Rwanda</option>
+                  <option value="benin">Bénin</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label for="message">Message / motivation*</label>
+                <textarea id="message" placeholder="Expliquez-nous en quelques mots pourquoi vous souhaitez participer (20 caractères minimum)…"></textarea>
+                <p class="error-msg" role="alert"></p>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Envoyer mon inscription <i class="bi bi-send-fill"></i></button>
+            </form>
+          </div>
+        </div>
+            <!-- Colonne informations  -->
+        <div class="contact-info">
+          <div class="info-card">
+            <h3>Informations pratiques</h3>
+            <div class="info-item">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              <div><strong>Lieu</strong><span>CICES, Route de l'Aéroport, Dakar, Sénégal</span></div>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-calendar-event-fill" aria-hidden="true"></i>
+              <div><strong>Dates</strong><span>12 - 14 novembre 2026</span></div>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+              <div><strong>Email</strong><span>contact@africonnectsummit.africa</span></div>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+              <div><strong>Téléphone</strong><span>+221 33 800 00 00</span></div>
+            </div>
+          </div>
+
+          <!-- <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps?q=CICES%20Dakar%20S%C3%A9n%C3%A9gal&output=embed"
+              title="Localisation du CICES, Dakar, Sénégal — lieu du sommet"
+              width="100%"
+              height="250%">
+            </iframe>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+                <!-- FAQ  -->
+    <section class="faq-section">
+      <div class="container">
+        <p class="eyebrow">Besoin d'aide</p>
+        <h2 class="section-title">Questions fréquentes</h2>
+
+        <div class="faq">
+          <div class="faq-item">
+            <input type="checkbox" id="faq-1">
+            <label class="faq-question" for="faq-1">
+              Comment se déroule l'inscription après l'envoi du formulaire ?
+              <i class="bi bi-plus-lg faq-icon"></i>
+            </label>
+            <div class="faq-answer">
+              <p>Vous recevrez un email de confirmation dans les 48h, accompagné de votre badge numérique et des instructions pour le paiement le cas échéant.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input type="checkbox" id="faq-2">
+            <label class="faq-question" for="faq-2">
+              Le sommet propose-t-il des tarifs réduits pour les étudiants ?
+              <i class="bi bi-plus-lg faq-icon"></i>
+            </label>
+            <div class="faq-answer">
+              <p>Oui, un tarif « Étudiant » à -60% est disponible sur présentation d'une carte étudiante valide le jour de l'événement.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input type="checkbox" id="faq-3">
+            <label class="faq-question" for="faq-3">
+              Puis-je assister à distance si je ne peux pas me déplacer à Dakar ?
+              <i class="bi bi-plus-lg faq-icon"></i>
+            </label>
+            <div class="faq-answer">
+              <p>Les keynotes principales seront retransmises en direct, mais les ateliers et sessions de networking restent réservés aux participants présents sur site.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input type="checkbox" id="faq-4">
+            <label class="faq-question" for="faq-4">
+              Comment devenir intervenant ou proposer une session ?
+              <i class="bi bi-plus-lg faq-icon"></i>
+            </label>
+            <div class="faq-answer">
+              <p>Sélectionnez « Intervenant » dans le formulaire d'inscription et détaillez votre proposition dans le champ message. Notre comité vous répondra sous deux semaines.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input type="checkbox" id="faq-5">
+            <label class="faq-question" for="faq-5">
+              Le badge inclut-il les repas et le cocktail de bienvenue ?
+              <i class="bi bi-plus-lg faq-icon"></i>
+            </label>
+            <div class="faq-answer">
+              <p>Oui, tous les badges « Visiteur », « Exposant » et « Investisseur » incluent les déjeuners des 3 jours ainsi que le cocktail de bienvenue du premier soir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <!-- FOOTER  -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-flex">
+                <!-- colonne1 -->
+                <div class="footer-col">
+                    <h4>AfriConnect Summit</h4>
+                    <p>Le sommet tech qui connecte les bâtisseurs du numérique africain, chaque année à Dakar.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Suivre AfriConnect sur X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Suivre AfriConnect sur LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Suivre AfriConnect sur Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Suivre AfriConnect sur YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- colonne2 -->
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="intervenants.html">Intervenants</a></li>
+                        <li><a href="contact.html">Inscription & Contact</a></li>
+                    </ul>
+                </div>
+                <!-- colonne3 -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="bi bi-envelope"></i> contact@africonnectsummit.africa</p>
+                    <p><i class="bi bi-telephone"></i> +221 33 800 00 00</p>
+                    <p><i class="bi bi-geo-alt"></i>Dakar, Sénégal</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="année">2026</span> AfriConnect Summit. Tous droits réservés.</p>
+            </div>
+        </div>
+
+        <button class="back-to-top" type="button" aria-label="Retour en haut de la page">
+            <!-- <i class="bi bi-arrow-up"></i> -->
+        </button>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>

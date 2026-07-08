@@ -4,14 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AfriConnect Summit</title>
-    <!-- feuille de style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- contenu de la page -->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- <i class="bi bi-globe-central-south-asia"></i> -->
+                <a href="index.html">AfriConnect Summit 2026</a>
+            </div>
+            <!-- boutton dark/light mode -->
+            <!-- <button id="menu-btn"><i class="fa-light fa-bars"></i></button> -->
+            <ul id="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <li><button id="menu-btn"><i class="fa-sharp-duotone fa-light fa-circle-moon"></i></button></li> -->
+            </ul>
+        </nav>
+    </header>
+                 <!-- HERO INTERVENANTS -->
+    <section class="page-hero">
+      <div class="container">
+        <p><a href="index.html">Accueil</a> / Intervenants</p>
+        <h2>Nos intervenants</h2>
+        <p>Découvrez les experts présents au AfriConnect Summit.</p>
+                    <!-- FILTRAGE et GRILLE  -->
+  <section class="intervenants">
+        <div class="filters">
+          <button class="btn active" onclick="filter('tous')">Tous</button>
+          <button class="btn" onclick="filter('ia')">IA & Tech</button>
+          <button class="btn" onclick="filter('business')">Business</button>
+          <button class="btn" onclick="filter('design')">Design</button>
+          <button class="btn" onclick="filter('data')">Data</button>
+        </div>
 
+        <div class="grid">
+          
+        <div class="card ia">
+            <img src="images/inter1.jpg" alt="">
+            <h3>Fatma Diouf</h3>
+            <p>Développeuse IA</p>
+            <p>Sénégal</p>
+        </div>
 
-<!-- script JavaScript -->
+        <div class="card business">
+            <img src="images/inter2.jpg" alt="">
+            <h3>Ibrahima Sow</h3>
+            <p>Entrepreneur</p>
+            <p>Côte d'Ivoire</p>
+        </div>
+
+        <div class="card design">
+            <img src="images/inter3.jpg" alt="">
+            <h3>Fatou Diallo</h3>
+            <p>UX Designer</p>
+            <p>Mali</p>
+        </div>
+
+        <div class="card data">
+            <img src="images/inter4.jpg" alt="">
+            <h3>Ali Ba</h3>
+            <p>Data Analyst</p>
+            <p>Sénégal</p>
+        </div>
+
+        <div class="card ia">
+            <img src="images/inter5.jpg" alt="">
+            <h3>Massamba Diouf</h3>
+            <p>Ingénieur IA</p>
+            <p>Ghana</p>
+        </div>
+
+        <div class="card business">
+            <img src="images/inter6.jpg" alt="">
+            <h3>Amy Sarr</h3>
+            <p>Consultante</p>
+            <p>Nigeria</p>
+        </div>
+
+        <div class="card design">
+            <img src="images/inter7.jpg" alt="">
+            <h3>Latyr</h3>
+            <p>Graphiste</p>
+            <p>Kenya</p>
+        </div>
+
+        <div class="card data">
+            <img src="images/inter8.jpg" alt="">
+            <h3>Marie Kane</h3>
+            <p>Data Scientist</p>
+            <p>Sénégal</p>
+        </div>
+
+        <div class="card ia">
+            <img src="images/inter9.jpg" alt="">
+            <h3>Omar Sy</h3>
+            <p>Développeur Web</p>
+            <p>Guinée</p>
+        </div>
+    </div>
+       
+    </section>
+        </main>
+        <!-- FOOTER  -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-flex">
+                <!-- colonne1 -->
+                <div class="footer-col">
+                    <h4>AfriConnect Summit</h4>
+                    <p>Le sommet tech qui connecte les bâtisseurs du numérique africain, chaque année à Dakar.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Suivre AfriConnect sur X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Suivre AfriConnect sur LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Suivre AfriConnect sur Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Suivre AfriConnect sur YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- colonne2 -->
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="intervenants.html">Intervenants</a></li>
+                        <li><a href="contact.html">Inscription & Contact</a></li>
+                    </ul>
+                </div>
+                <!-- colonne3 -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="bi bi-envelope"></i> contact@africonnectsummit.africa</p>
+                    <p><i class="bi bi-telephone"></i> +221 33 800 00 00</p>
+                    <p><i class="bi bi-geo-alt"></i>Dakar, Sénégal</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="année">2026</span> AfriConnect Summit. Tous droits réservés.</p>
+            </div>
+        </div>
+
+        <button class="back-to-top" type="button" aria-label="Retour en haut de la page">
+            <!-- <i class="bi bi-arrow-up"></i> -->
+        </button>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
