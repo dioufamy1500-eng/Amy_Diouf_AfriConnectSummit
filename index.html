@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AfriConnect Summit</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav>
             <div class="logo">
-                <!-- <i class="bi bi-globe-central-south-asia"></i> -->
-                <a href="index.html">AfriConnect Summit 2026</a>
+                <a href="index.html">AfriConnect Summit 2027</a>
             </div>
-            <!-- boutton dark/light mode -->
-            <!-- <button id="menu-btn"><i class="fa-light fa-bars"></i></button> -->
             <ul id="menu">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="programme.html">Programme</a></li>
                 <li><a href="intervenants.html">Intervenants</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!-- <li><button id="menu-btn"><i class="fa-sharp-duotone fa-light fa-circle-moon"></i></button></li> -->
+                <li><a href="contact.html">Inscription&Contact</a></li>
             </ul>
+            <button id="menu-btn" aria-label="Ouvrir le menu"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
     <main>
         <!-- HERO ACCUEIL -->
         <section class="hero">
-            <h1>Bienvenue au AfriConnect Summit 2026</h1>
+            <h1>Bienvenue au AfriConnect Summit 2027</h1>
             <p>Rejoignez-nous pour un événement exceptionnel qui rassemble les esprits les plus brillants d'Afrique et
                 du monde entier.</p>
             <div class="buttons">
                 <a href="programme.html" class="btn">Voir le programme</a>
                 <a href="contact.html" class="btn">S'inscrire</a>
             </div>
-            <se class="compte-rebours">
+            <div class="compte-rebours">
                 <h2>Compte à rebours avant l'événement :</h2>
                 <div class="temps">
                     <div>
@@ -56,6 +54,7 @@
                         <p>Secondes</p>
                     </div>
                 </div>
+            </div>
         </section>
 
         <!-- CHIFFRES CLÉS  -->
@@ -82,7 +81,6 @@
                     <p>Pays africains représentés</p>
                 </div>
             </div>
-
         </section>
 
         <!-- POURQUOI PARTICIPER  -->
@@ -96,22 +94,22 @@
 
             <div class="why-flex">
                 <div class="why-card">
-                    <i class="bi bi-people-fill why-icon"></i>
+                    <div class="why-icon"><i class="fa-solid fa-handshake"></i></div>
                     <h3>Un réseau panafricain</h3>
                     <p>Rencontrez des professionnels venant de plusieurs pays africains.</p>
                 </div>
-            </div>
 
-            <div class="why-card">
-                <i class="bi bi-lightbulb-fill why-icon"></i>
-                <h3>Des contenus concrets</h3>
-                <p>Participez à des conférences et des ateliers utiles.</p>
-            </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3>Des contenus concrets</h3>
+                    <p>Participez à des conférences et des ateliers utiles.</p>
+                </div>
 
-            <div class="why-card">
-                <i class="bi bi-rocket-takeoff-fill why-icon"></i>
-                <h3>Un accès aux investisseurs</h3>
-                <p> Présentez vos projets et échangez avec des investisseurs.</p>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <h3>Un accès aux investisseurs</h3>
+                    <p>Présentez vos projets et échangez avec des investisseurs.</p>
+                </div>
             </div>
         </section>
 
@@ -121,36 +119,35 @@
             <p>Découvrez quelques intervenants qui participeront au sommet.</p>
             <div class="speakers-grid">
                 <div class="card">
-                    <img src="images/inter1.jpg" alt="">
+                    <img src="images/inter1.jpg" alt="Portrait de Mariam Ball">
                     <h3>Mariam Ball</h3>
                     <p>Développeuse Web</p>
                     <p>Sénégal</p>
                 </div>
 
                 <div class="card">
-                    <img src="images/inter2.jpg" alt="">
+                    <img src="images/inter2.jpg" alt="Portrait de Khadja Mbaye">
                     <h3>Khadja Mbaye</h3>
                     <p>Data Scientist</p>
                     <p>Côte d'Ivoire</p>
                 </div>
 
                 <div class="card">
-                    <img src="images/inter3.jpg" alt="">
+                    <img src="images/inter3.jpg" alt="Portrait de Moustapha Fall">
                     <h3>Moustapha Fall</h3>
                     <p>UX Designer</p>
                     <p>Mali</p>
                 </div>
 
                 <div class="card">
-                    <img src="images/inter4.jpg" alt="">
+                    <img src="images/inter4.jpg" alt="Portrait de Cheikh Diallo">
                     <h3>Cheikh Diallo</h3>
                     <p>Ingénieur IA</p>
                     <p>Ghana</p>
                 </div>
             </div>
             <div class="speakers-cta">
-                <a href="intervenants.html" class="lien">Voir tous les intervenants
-                    <i class="bi bi-arrow-right"></i></a>
+                <a href="intervenants.html" class="lien">Voir tous les intervenants</a>
             </div>
         </section>
 
@@ -182,10 +179,10 @@
                     <h4>AfriConnect Summit</h4>
                     <p>Le sommet tech qui connecte les bâtisseurs du numérique africain, chaque année à Dakar.</p>
                     <div class="social-icons">
-                        <a href="#" aria-label="Suivre AfriConnect sur X (Twitter)"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" aria-label="Suivre AfriConnect sur LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" aria-label="Suivre AfriConnect sur Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" aria-label="Suivre AfriConnect sur YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
                 <!-- colonne2 -->
@@ -201,9 +198,9 @@
                 <!-- colonne3 -->
                 <div class="footer-col">
                     <h4>Contact</h4>
-                    <p><i class="bi bi-envelope"></i> contact@africonnectsummit.africa</p>
-                    <p><i class="bi bi-telephone"></i> +221 33 800 00 00</p>
-                    <p><i class="bi bi-geo-alt"></i>Dakar, Sénégal</p>
+                    <p><i class="fa-solid fa-envelope"></i> contact@africonnectsummit.africa</p>
+                    <p><i class="fa-solid fa-phone"></i> +221 33 800 00 00</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Dakar, Sénégal</p>
                 </div>
             </div>
 
@@ -213,7 +210,7 @@
         </div>
 
         <button class="back-to-top" type="button" aria-label="Retour en haut de la page">
-            <!-- <i class="bi bi-arrow-up"></i> -->
+            <i class="fa-solid fa-arrow-up"></i>
         </button>
     </footer>
     <script src="js/main.js"></script>

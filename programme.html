@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriConnect Summit</title>
+    <title>Programme - AfriConnect Summit</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 <header>
         <nav>
             <div class="logo">
-                <!-- <i class="bi bi-globe-central-south-asia"></i> -->
-                <a href="index.html">AfriConnect Summit 2026</a>
+                <a href="index.html">AfriConnect Summit 2027</a>
             </div>
-            <!-- boutton dark/light mode -->
-            <!-- <button id="menu-btn"><i class="fa-light fa-bars"></i></button> -->    
             <ul id="menu">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="programme.html">Programme</a></li>
                 <li><a href="intervenants.html">Intervenants</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!-- <li><button id="menu-btn"><i class="fa-sharp-duotone fa-light fa-circle-moon"></i></button></li> -->
+                <li><a href="contact.html">Inscription&Contact</a></li>
             </ul>
+            <button id="menu-btn" aria-label="Ouvrir le menu"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
+    <main>
               <!-- HERO PROGRAMME -->
     <section class="page-hero">
       <div class="container">
@@ -37,9 +36,9 @@
                 <!-- ONGLETS 3 jours  -->
     <section class="program" aria-label="Planning détaillé par jour">
       <div class="onglets">
-          <button class="btn active" onclick="afficherJour('jour1')">Jour 1 · 15juin.</button>
-          <button class="btn" onclick="afficherJour('jour2')">Jour 2 · 16 juin.</button>
-          <button class="btn" onclick="afficherJour('jour3')">Jour 3 · 17 juin.</button>
+          <button class="btn active" onclick="afficherJour('jour1', this)">Jour 1 · 15 juin</button>
+          <button class="btn" onclick="afficherJour('jour2', this)">Jour 2 · 16 juin</button>
+          <button class="btn" onclick="afficherJour('jour3', this)">Jour 3 · 17 juin</button>
         </div>
         <!-- JOUR1 -->
         <div id="jour1" class="jour">
@@ -188,30 +187,30 @@
         <h2>Les grandes thématiques</h2>
         <div class="grid">
             <div class="card">
-                <i class="bi bi-lightbulb"></i>
+                <i class="fa-solid fa-lightbulb"></i>
                 <h3>Innovation</h3>
                 <p>Découvrir les innovations de l'IA.</p>
             </div>
-    
+
             <div class="card">
-                <i class="bi bi-code-slash"></i>
+                <i class="fa-solid fa-code"></i>
                 <h3>Développement</h3>
                 <p>Apprendre les bases du développement web.</p>
             </div>
             <div class="card">
-                <i class="bi bi-people"></i>
+                <i class="fa-solid fa-users"></i>
                 <h3>Entrepreneuriat</h3>
                 <p>Rencontrer des entrepreneurs africains.</p>
             </div>
             <div class="card">
-                <i class="bi bi-bar-chart"></i>
+                <i class="fa-solid fa-chart-bar"></i>
                 <h3>Investissement</h3>
                 <p>Échanger avec des investisseurs.</p>
             </div>
         </div>
     </section>
   </main>
-  <!-- FOOTER  -->
+    <!-- FOOTER  -->
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-flex">
@@ -220,10 +219,10 @@
                     <h4>AfriConnect Summit</h4>
                     <p>Le sommet tech qui connecte les bâtisseurs du numérique africain, chaque année à Dakar.</p>
                     <div class="social-icons">
-                        <a href="#" aria-label="Suivre AfriConnect sur X (Twitter)"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" aria-label="Suivre AfriConnect sur LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" aria-label="Suivre AfriConnect sur Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" aria-label="Suivre AfriConnect sur YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
                 <!-- colonne2 -->
@@ -233,15 +232,15 @@
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="programme.html">Programme</a></li>
                         <li><a href="intervenants.html">Intervenants</a></li>
-                        <li><a href="contact.html">Inscription & Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <!-- colonne3 -->
                 <div class="footer-col">
                     <h4>Contact</h4>
-                    <p><i class="bi bi-envelope"></i> contact@africonnectsummit.africa</p>
-                    <p><i class="bi bi-telephone"></i> +221 33 800 00 00</p>
-                    <p><i class="bi bi-geo-alt"></i>Dakar, Sénégal</p>
+                    <p><i class="fa-solid fa-envelope"></i> contact@africonnectsummit.africa</p>
+                    <p><i class="fa-solid fa-phone"></i> +221 33 800 00 00</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Dakar, Sénégal</p>
                 </div>
             </div>
 
@@ -251,7 +250,7 @@
         </div>
 
         <button class="back-to-top" type="button" aria-label="Retour en haut de la page">
-            <!-- <i class="bi bi-arrow-up"></i> -->
+            <i class="fa-solid fa-arrow-up"></i>
         </button>
     </footer>
     <script src="js/main.js"></script>
