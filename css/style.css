@@ -154,7 +154,7 @@ nav{
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    background: white;
+    background: var(--white);
     color: var(--primary);
 }
 
@@ -200,7 +200,7 @@ nav{
 }
 
 .stat-card{
-    background: white;
+    background: var(--white);
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -233,7 +233,7 @@ nav{
 }
 
 .why-card{
-    background: white;
+    background: var(--white);
     width: 100%;
     max-width: 320px;
     padding: 30px;
@@ -253,9 +253,8 @@ nav{
 }
 
 /* CARTES INTERVENANTS */
-/* Utilisée par .speakers-grid (accueil) et .intervenants .grid (page intervenants) */
 .card{
-    background: white;
+    background: var(--white);
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
@@ -296,7 +295,7 @@ nav{
     margin-top: 40px;
     margin-bottom: 50px; 
 }
-/* Le lien "Voir tous les intervenants" reprend maintenant le style .btn */
+/* Le lien Voir tous les intervenants */
 .speakers-cta .lien{
     display: inline-block;
     text-decoration: none;
@@ -326,7 +325,7 @@ nav{
     flex-wrap: wrap;
 }
 .sponsor{
-    background: white;
+    background: var(--white);
     padding: 30px 40px;
     border-radius: 10px;
     text-align: center;
@@ -338,7 +337,6 @@ nav{
     margin-bottom: 8px;
 }
 
-/* PAGE PROGRAMME */
 .program{
     max-width: 1000px;
     margin: auto;
@@ -351,7 +349,7 @@ nav{
     margin-bottom: 30px;
 }
 .onglets .btn{
-    background: white;
+    background: var(--white);
     color: var(--secondary);
     border: 2px solid var(--primary);
     cursor: pointer;
@@ -372,15 +370,23 @@ nav{
 }
 .program table{
     width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
-    background: white;
+    background: var(--white);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 3px 8px rgba(0,0,0,.1); 
+    box-shadow: 0 3px 8px rgba(0,0,0,.1);
+}
+.program th,
+.program td{
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
 }
 .program th{
     background: var(--secondary);
     color: white;
+    width: 25%;
 }
 .program tr:last-child td{
     border-bottom: none;
@@ -403,7 +409,7 @@ nav{
     gap: 25px;
 }
 .themes .card{
-    background: white;
+    background: var(--white);
     padding: 30px;
     text-align: center;
     border-radius: 10px;
@@ -418,6 +424,16 @@ nav{
     color: var(--primary);
     margin-bottom: 15px;
 }
+
+.reveal{
+    opacity: 0;
+    transform: translateY(36px);
+    transition: 0.7s;
+}
+.reveal.in-view{
+    opacity: 1;
+    transform: translateY(0);
+}
 /* PAGE INTERVENANTS */
 .intervenants{
     max-width: 1100px;
@@ -431,7 +447,7 @@ nav{
     margin-bottom: 30px;
 }
 .filters .btn{
-    background: white;
+    background: var(--white);
     color: var(--secondary);
     border: 2px solid var(--primary);
     cursor: pointer;
@@ -498,13 +514,15 @@ nav{
     cursor: pointer;
 }
 
-/* NAVBAR agrandi des autres pages */
+/* NAVBAR AGRANDIE — Pages intérieures (Programme, Intervenants, Contact) */
+   
 body.page-interior header{
     padding: 10px 0; 
 }
 body.page-interior nav{
     max-width: 1300px;      
-    padding: 26px 50px;    
+    padding: 26px 50px;     
+}
 body.page-interior .logo a{
     font-size: 18px; 
 }
@@ -515,7 +533,23 @@ body.page-interior #menu{
 body.page-interior .page-hero{
     padding-top: 110px;
 }
-
+  
+.back-to-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
 /* Responsive placé en dernier pour bien surcharger les règles */
 /* TABLETTE */
 @media(max-width:992px){
@@ -749,6 +783,7 @@ body.page-interior .page-hero{
 
 /* HERO DE PAGE */
 
+.page-hero{
     background:#005F73;
     color:white;
     text-align:center;
@@ -796,7 +831,7 @@ body.page-interior .page-hero{
 /* CARTE FORMULAIRE */
 
 .form-card{
-    background:#ffffff;
+    background: var(--white);
     padding:30px;
     border-radius:10px;
     box-shadow:0 0 10px rgba(0,0,0,0.1);
@@ -822,7 +857,7 @@ body.page-interior .page-hero{
 .form-row select,
 .form-row textarea{
     padding:12px;
-    border:1px solid #ccc;
+    border:1px solid var(--border);
     border-radius:6px;
     font-size:16px;
 }
@@ -869,13 +904,13 @@ body.page-interior .page-hero{
 /* INFORMATIONS */
 
 .info-card{
-    background:#f5f5f5;
+    background:var(--light);
     padding:30px;
     border-radius:10px;
 }
 
 .info-card h3{
-    color:#0d3b66;
+    color: var(--secondary);
     margin-bottom:20px;
 }
 
@@ -889,14 +924,14 @@ body.page-interior .page-hero{
 }
 
 .info-item span{
-    color:#555;
+    color: var(--gray);
 }
 
 /* FAQ */
 
 .faq-section{
     padding:60px 20px;
-    background:#f9f9f9;
+    background: var(--light);
 }
 
 .section-title{
@@ -906,7 +941,7 @@ body.page-interior .page-hero{
 }
 
 .faq-item{
-    background:white;
+    background: var(--white);
     margin-bottom:15px;
     border-radius:6px;
     overflow:hidden;
